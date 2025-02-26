@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAKES by TERRY</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Playful font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playful&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boxicon script -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Modern Chatbot -->
+        <div class="floating-chatbot">
+            <div class="chat-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="chat-window" style="display: none;">
+                <div class="chat-header">
+                    <h4>Chat with us!</h4>
+                    <button class="close-chat"><i class="fa-solid fa-times"></i></button>
+                </div>
+                <div class="chat-body">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            Hello! How can we help you today?
+                        </div>
+                        <div class="message-time">Just now</div>
+                    </div>
+                </div>
+                <div class="chat-controls">
+                    <div class="quick-replies">
+                        <button class="quick-reply">Order Status</button>
+                        <button class="quick-reply">Custom Cake</button>
+                        <button class="quick-reply">Delivery Info</button>
+                    </div>
+                    <div class="typing-indicator" style="display: none;">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <div class="message-input">
+                        <input type="text" placeholder="Type your message..." />
+                        <button class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- up arrow button -->
+        <div class="up-arrow">
+            <a href="#container"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+        <!-- navbar -->
+         <header class="fixed-navbar">
+            <a href="#"><img id="logo" src="./CakesByTerryLogo.jpeg" alt="CAKES by TERRY"></a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <!-- menu icon -->
+                <i id="menu" class='bx bx-menu '></i>
+                <!-- close icon -->
+                <i id="close" class='bx bx-x'></i>
+            </label>
+            <nav>
+                <ul>
+                    <li class="nav-links"><a class="links" href="#home">Home</a></li>
+                    <li class="nav-links"><a class="links" href="#Catalogue">Catalogue</a></li>
+                    <li class="nav-links"><a class="links" href="#home">About</a></li>
+                    <li class="nav-links"><a class="links" href="#contact-us">Contact Us</a></li>
+                    <li class="nav-links"><a class="links" href="gallery.html">Gallery</a></li>
+
+                </ul>
+                <div class="cart-container">
+                    <a class="cart" href="#contact-us">
+                        <i class="fas fa-calendar-alt"></i> Corporate Booking
+                    </a>
+                </div>
+            </nav>
+         </header>
+        <!-- home section -->
+        <section id="home">
+            <div id="home-div" class="home-div">
+                <h1>CAKES by TERRY</h1>
+                <p>At CAKES by TERRY, we believe every cake tells a story. Using only the finest ingredients, we create cakes that not only taste amazing but look stunning as well.</p>
+                <p>Deliciously crafted cakes for every occasion!</p>
+                <a class="order" href="#contact-us">Order Now</a>
+            </div>
+            <div id="home-div2" class="home-div">
+                <img class="back-img" src="./images/home-main-back.png" alt="">
+                <img class="front-img" src="./images/home-main-front.png" alt="">
+            </div>
+        </section>
+        <!-- categories section -->
+        <section id="Catalogue">
+            <div class="catalogue-section Catalogue-heading">
+                <h1>Catalogue</h1>
+                <h4>CAKES by TERRY</h4>
+            </div>
+            <div  class="catalogue-section Catalogue">
+                <div class="images">
+                    <div class="image-item">
+                        <a href="#cake-section">Cakes</a>
+                    </div>
+                    <div class="image-item">
+                        <a href="#cookie-section">Cookies</a>
+                    </div>
+                    <div class="image-item">
+                        <a href="#cupcake-section">Cupcakes</a>
+                    </div>
+                    <div class="image-item">
+                        <a href="#brownie-section">Brownies</a>
+                    </div>
+                    <div class="image-item">
+                        <a href="/cakes.pdf" target="_blank">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cakes section -->
+         <section id="cake-section" class="product-section">
+            <div class="cake-heading">
+                <h1>Cakes <span>from CAKES by TERRY</span></h1>
+                <a href="/cakes.pdf" target="_blank">
+                    <span>Explore More</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <div class="cake-slider">
+                <div class="slides-div" id="slide-1">
+                    <img src="images/cakes/Chocolate Berry Cake.jpeg" alt="" class="img" id="img1">
+                    <div class="img-details"><a href="">Chocolate Berry Cake</a></div>
+                </div>
+                <div class="slides-div" id="slide-2">
+                    <img src="images/cakes/Carrot Cake.jpeg" alt="" class="img" id="img2">
+                    <div class="img-details"><a href="">Carrot Cake</a></div>
+                </div>
+                <div class="slides-div" id="slide-3">
+                    <img src="images/cakes/Chocolate Raspberry Mousse Cake.jpeg" alt="" class="img" id="img3">
+                    <div class="img-details"><a href="">Chocolate Raspberry Mousse Cake</a></div>
+                </div>
+                <div class="slides-div" id="slide-4">
+                    <img src="images/cakes/Mango Cake.jpeg" alt="" class="img" id="img4">
+                    <div class="img-details"><a href="">Mango Cake</a></div>
+                </div>
+                <div class="slides-div" id="slide-5">
+                    <img src="images/cakes/Simple Chocolate Fudge Cake.jpeg" alt="" class="img" id="img5">
+                    <div class="img-details"><a href="">Simple Chocolate Fudge Cake</a></div>
+                </div>
+                <div class="slides-div" id="slide-6">
+                    <img src="images/cakes/Strawberry Mousse Cake.jpeg" alt="" class="img" id="img6">
+                    <div class="img-details"><a href="">Strawberry Mousse Cake</a></div>
+                </div>  
+            </div>
+         </section>
+        
+         <!-- Cupcakes section -->
+         <section id="cupcake-section" class="product-section">
+            <div class="cake-heading">
+                <h1>Cupcakes <span>from CAKES by TERRY</span></h1>
+                <a href="/cakes.pdf" target="_blank">
+                    <span>Explore More</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+            <div class="cake-slider">
+                <div class="slides-div" id="slide-2-1">
+                    <img src="images/cupcakes/Apple Pie Cupcakes.jpeg" alt="no img" class="img" id="img2-1">
+                    <div class="img-details"><a href="">Apple Pie Cupcakes</a></div>
+                </div>
+                <div class="slides-div" id="slide-2-2">
+                    <img src="images/cupcakes/Coconut Cream Cupcakes.jpeg" alt="" class="img" id="img2-2">
+                    <div class="img-details"><a href="">Coconut Cream Cupcakes</a></div>
+                </div>
+                <div class="slides-div" id="slide-2-3">
+                    <img src="images/cupcakes/Cookie Butter Cupcakes.jpeg" alt="" class="img" id="img2-3">
+                    <div class="img-details"><a href="">Cookie Butter Cupcakes</a></div>
+                </div>
+                <div class="slides-div" id="slide-2-4">
+                    <img src="images/cupcakes/Green Dream Pistachio Cupcakes.jpeg" alt="no img" class="img" id="img2-4">
+                    <div class="img-details"><a href="">Green Dream Pistachio Cupcakes</a></div>
+                </div>
+                <div class="slides-div" id="slide-2-5">
+                    <img src="images/cupcakes/Ice Cream Cupcakes.jpeg" alt="" class="img" id="img2-5">
+                    <div class="img-details"><a href="">Ice Cream Cupcakes</a></div>
+                </div>
+                <div class="slides-div" id="slide-2-6">
+                    <img src="images/cupcakes/Jam Donut Cupcakes.jpeg" alt="" class="img" id="img2-6">
+                    <div class="img-details"><a href="">Jam Donut Cupcakes</a></div>
+                </div>
+            </div>
+         </section>
+        <!-- about us section -->
+        <!-- Contact Us Section -->
+<section id="contact-us">
+    <div class="contact-us-background">
+        <div class="contact-us-container">
+            <h1>Order Now!</h1>
+            <p>We'd love to hear from you! Whether you want a custom cake or just have questions, reach out to us.</p>
+            <form action="mailto:cakebyterry@gmail.com" method="post" enctype="text/plain" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="partners">
+    <iframe src="TEST.html" style="width: 100%; height: 300px; border: none;"></iframe>
+  </section>
+        <!-- footer -->
+        <footer>
+            <div class="footer-div main-footer-div">
+                <img id="logo" src="./CakesByTerryLogo.jpeg" alt="CAKES by TERRY">
+                <h4>CAKES by TERRY</h4>
+                <div class="icon-collections">
+                    <!-- TikTok -->
+                  <div class="icon">
+                       <a target="_blank" href="https://www.tiktok.com/@cakesbyterry">
+                            <i class="fa-brands fa-tiktok brands"></i>
+                        </a>
+                </div>
+                    <!-- Facebook -->
+                    <div class="icon">
+                        <a target="_blank" href="https://www.facebook.com/terriey.mike">
+                            <i class="fa-brands fa-facebook-f brands"></i>
+                        </a>
+                    </div>
+                    <!-- Instagram -->
+                    <div class="icon">
+                        <a target="_blank" href="https://www.instagram.com/cakesbyterry/p/DCmmBsPuMpA/">
+                            <i class="fa-brands fa-instagram brands"></i>
+                        </a>
+                    </div>
+                    <!-- WhatsApp -->
+                    <div class="icon">
+                        <a target="_blank" href="https://wa.me/254715647610">
+                            <i class="fa-brands fa-whatsapp brands"></i>
+                        </a>
+                     </div>
+                    <!-- Mail -->
+                    <div class="icon">
+                        <a target="_blank" href="mailto:cakebyterry@gmail.com">
+                            <i class="fa-regular fa-envelope brands"></i>
+                        </a>
+                    </div>
+                </div>
+                <a id="contact-us" class="cart contact-us" href="#contact-us">Get in touch with us</a>
+            </div>
+            <div class="footer-div">
+                <li class=" main">Quick Links</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About Us</a></li>
+                <li><a href="/cakes.pdf" target="_blank">Catalogue</a></li> 
+            </div>
+            <div class="footer-div">
+                <li class=" main">For Customer</li>
+                <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a></li>
+            </div>
+            <div class="footer-div">
+                <li class="main">Contact</li>
+                <li><i class="fa-solid fa-cake-candles cake-icon"></i> <span class="highlight">CAKES by TERRY</span></li>
+                <li><i class="fa-solid fa-location-dot location-icon"></i> Kamakis, Off Thika Road</li>
+                <li><i class="fa-solid fa-envelope email-icon"></i> Email us on: <a href="mailto: cakebyterry@gmail.com" class="highlight">cakebyterry@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone phone-icon"></i> <a href="tel:+254715647610" class="highlight">+254715647610</a></li>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatIcon = document.querySelector('.chat-icon');
+            const chatWindow = document.querySelector('.chat-window');
+            const closeChatButton = document.querySelector('.close-chat');
+            const sendButton = document.querySelector('.send-btn');
+            const messageInput = document.querySelector('.message-input input');
+            const typingIndicator = document.querySelector('.typing-indicator');
+            const chatBody = document.querySelector('.chat-body');
+
+            // Toggle chat window
+            chatIcon.addEventListener('click', function() {
+                chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+                if (chatWindow.style.display === 'block') {
+                    chatWindow.classList.add('open');
+                }
+            });
+
+            // Close chat
+            closeChatButton.addEventListener('click', function() {
+                chatWindow.classList.remove('open');
+                setTimeout(() => {
+                    chatWindow.style.display = 'none';
+                }, 300);
+            });
+
+            // Send message
+            sendButton.addEventListener('click', sendMessage);
+            messageInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+
+            // Quick reply buttons
+            document.querySelectorAll('.quick-reply').forEach(button => {
+                button.addEventListener('click', function() {
+                    const message = this.textContent;
+                    addMessage(message, 'user');
+                    simulateBotResponse();
+                });
+            });
+
+            function sendMessage() {
+                const message = messageInput.value.trim();
+                if (message) {
+                    addMessage(message, 'user');
+                    messageInput.value = '';
+                    simulateBotResponse();
+                }
+            }
+
+            function addMessage(text, sender) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message', `${sender}-message`);
+                messageElement.innerHTML = `
+                    <div class="message-content">${text}</div>
+                    <div class="message-time">${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
+                `;
+                chatBody.appendChild(messageElement);
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+
+            function simulateBotResponse() {
+                typingIndicator.style.display = 'block';
+                setTimeout(() => {
+                    typingIndicator.style.display = 'none';
+                    addMessage('Thank you for your message! Our team will get back to you shortly.', 'bot');
+                }, 1500);
+            }
+        });
+
+    </script>
+</body>
+</html>

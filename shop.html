@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .card-content p {
+            color: #555;
+        }
+
+        .card-content button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .card-content button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+        .pagination button {
+            background-color: #fff;
+            color: #007bff;
+            border: 1px solid #007bff;
+            padding: 10px 15px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .pagination button.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .pagination button:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cake Shop</h1>
+    </header>
+
+    <div class="container">
+        <!-- Basic Flavours -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Vanilla">
+            <div class="card-content">
+                <h3>Vanilla (1KG)</h3>
+                <p>Ksh. 2450</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Lemon">
+            <div class="card-content">
+                <h3>Lemon (1KG)</h3>
+                <p>Ksh. 2450</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Passion">
+            <div class="card-content">
+                <h3>Passion (1KG)</h3>
+                <p>Ksh. 2450</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Advanced Flavours -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Chocolate">
+            <div class="card-content">
+                <h3>Chocolate (1KG)</h3>
+                <p>Ksh. 2500</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Caramel">
+            <div class="card-content">
+                <h3>Caramel (1KG)</h3>
+                <p>Ksh. 2500</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Red Velvet">
+            <div class="card-content">
+                <h3>Red Velvet (1KG)</h3>
+                <p>Ksh. 2600</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cake Fillings -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Chocolate Ganache">
+            <div class="card-content">
+                <h3>Chocolate Ganache</h3>
+                <p>Ksh. 500</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Strawberry Filling">
+            <div class="card-content">
+                <h3>Strawberry Filling</h3>
+                <p>Ksh. 400</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Cake Toppers -->
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Paper Cartoon Characters">
+            <div class="card-content">
+                <h3>Paper Cartoon Characters</h3>
+                <p>Ksh. 400</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Candles">
+            <div class="card-content">
+                <h3>Candles</h3>
+                <p>Ksh. 150</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const data = [
+                    [
+                        { title: "Vanilla (1KG)", price: "Ksh. 2450", img: "https://via.placeholder.com/300" },
+                        { title: "Lemon (1KG)", price: "Ksh. 2450", img: "https://via.placeholder.com/300" },
+                        { title: "Passion (1KG)", price: "Ksh. 2450", img: "https://via.placeholder.com/300" }
+                    ],
+                    [
+                        { title: "Chocolate Ganache", price: "Ksh. 500", img: "https://via.placeholder.com/300" },
+                        { title: "Strawberry Filling", price: "Ksh. 400", img: "https://via.placeholder.com/300" },
+                        { title: "Candles", price: "Ksh. 150", img: "https://via.placeholder.com/300" }
+                    ]
+                ];
+    
+                const container = document.querySelector(".container");
+                const paginationButtons = document.querySelectorAll(".pagination button");
+    
+                const renderPage = (pageIndex) => {
+                    container.innerHTML = "";
+                    data[pageIndex].forEach(item => {
+                        const card = document.createElement("div");
+                        card.className = "card";
+                        card.innerHTML = `
+                            <img src="${item.img}" alt="${item.title}">
+                            <div class="card-content">
+                                <h3>${item.title}</h3>
+                                <p>${item.price}</p>
+                                <button>Add to Cart</button>
+                            </div>
+                        `;
+                        container.appendChild(card);
+                    });
+    
+                    paginationButtons.forEach((btn, index) => {
+                        btn.classList.toggle("active", index === pageIndex);
+                    });
+                };
+    
+                paginationButtons.forEach((button, index) => {
+                    button.addEventListener("click", () => {
+                        renderPage(index);
+                    });
+                });
+    
+                renderPage(0);
+            });
+    </script>
+</body>
+</html>

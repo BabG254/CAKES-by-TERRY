@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - CAKES by TERRY</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .gallery-card {
+            background: linear-gradient(to bottom, #F2C4DA, #F2E6C2);
+            border-radius: 15px;
+            margin: 15px;
+            width: 250px; /* Reduced size */
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery-card:hover {
+            transform: scale(1.05);
+        }
+        .gallery-card img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery-card h3 {
+            text-align: center;
+            font-family: 'Playful', cursive;
+            color: #260303;
+            margin: 10px 0;
+        }
+        .gallery-card p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #8C656F;
+            margin: 10px 0;
+        }
+        .fixed-navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 1000;
+        }
+        .next-page-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #F2C4DA;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed-navbar">
+        <a href="#"><img id="logo" src="./CakesByTerryLogo.jpeg" alt="CAKES by TERRY"></a>
+        <nav>
+            <ul>
+                <li class="nav-links"><a class="links" href="index.html">Home</a></li>
+                <li class="nav-links"><a class="links" href="#Catalogue">Catalogue</a></li>
+                <li class="nav-links"><a class="links" href="#home">About</a></li>
+                <li class="nav-links"><a class="links" href="#contact-us">Contact Us</a></li>
+                <li class="nav-links"><a class="links" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="gallery-container">
+        <div class="gallery-card">
+            <img src="images/cakes/Chocolate Raspberry Mousse Cake.jpeg" alt="Chocolate Raspberry Mousse Cake">
+            <h3>Chocolate Raspberry Mousse Cake</h3>
+            <p>KShs 1,500</p>
+        </div>
+        <div class="gallery-card">
+            <img src="images/cakes/Carrot Cake.jpeg" alt="Carrot Cake">
+            <h3>Carrot Cake</h3>
+            <p>KShs 1,200</p>
+        </div>
+        <div class="gallery-card">
+            <img src="images/cakes/Strawberry Mousse Cake.jpeg" alt="Strawberry Mousse Cake">
+            <h3>Strawberry Mousse Cake</h3>
+            <p>KShs 1,800</p>
+        </div>
+        <div class="gallery-card">
+            <img src="images/cakes/Mango Cake.jpeg" alt="Mango Cake">
+            <h3>Mango Cake</h3>
+            <p>KShs 1,600</p>
+        </div>
+        <div class="gallery-card">
+            <img src="images/cakes/Chocolate Berry Cake.jpeg" alt="Chocolate Berry Cake">
+            <h3>Chocolate Berry Cake</h3>
+            <p>KShs 1,700</p>
+        </div>
+        <div class="gallery-card">
+            <img src="images/cakes/Vegan Chocolate Fudge Cake.jpeg" alt="Vegan Chocolate Fudge Cake">
+            <h3>Vegan Chocolate Fudge Cake</h3>
+            <p>KShs 1,900</p>
+        </div>
+    </div>
+    <button class="next-page-button" onclick="loadMoreCards()">Next Page</button>
+    <div class="floating-chatbot">
+        <div class="chat-icon">
+            <i class="fa-solid fa-comments"></i>
+        </div>
+        <div class="chat-window" style="display: none;">
+            <div class="chat-header">
+                <h4>Chat with us!</h4>
+                <button class="close-chat">X</button>
+            </div>
+            <div class="chat-body">
+                <p>Hello! How can we help you today?</p>
+            </div>
+            <input type="text" placeholder="Type your message..." />
+        </div>
+    </div>
+    <footer>
+        <div class="footer-div main-footer-div">
+            <img id="logo" src="./CakesByTerryLogo.jpeg" alt="CAKES by TERRY">
+            <h4>CAKES by TERRY</h4>
+            <div class="icon-collections">
+                <div class="icon">
+                    <a target="_blank" href="https://www.tiktok.com/@cakesbyterry">
+                        <i class="fa-brands fa-tiktok brands"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a target="_blank" href="https://www.facebook.com/terriey.mike">
+                        <i class="fa-brands fa-facebook-f brands"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a target="_blank" href="https://www.instagram.com/cakesbyterry/p/DCmmBsPuMpA/">
+                        <i class="fa-brands fa-instagram brands"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a target="_blank" href="https://wa.me/254715647610">
+                        <i class="fa-brands fa-whatsapp brands"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a target="_blank" href="mailto:cakebyterry@gmail.com">
+                        <i class="fa-regular fa-envelope brands"></i>
+                    </a>
+                </div>
+            </div>
+            <a id="contact-us" class="cart contact-us" href="#contact-us">Get in touch with us</a>
+        </div>
+        <div class="footer-div">
+            <li class=" main">Quick Links</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#home">About Us</a></li>
+            <li><a href="/cakes.pdf" target="_blank">Catalogue</a></li> 
+        </div>
+        <div class="footer-div">
+            <li class=" main">For Customer</li>
+            <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a></li>
+        </div>
+        <div class="footer-div">
+            <li class="main">Contact</li>
+            <li><i class="fa-solid fa-cake-candles cake-icon"></i> <span class="highlight">CAKES by TERRY</span></li>
+            <li><i class="fa-solid fa-location-dot location-icon"></i> Kamakis, Off Thika Road</li>
+            <li><i class="fa-solid fa-envelope email-icon"></i> Email us on: <a href="mailto: cakebyterry@gmail.com" class="highlight">cakebyterry@gmail.com</a></li>
+            <li><i class="fa-solid fa-phone phone-icon"></i> <a href="tel:+254715647610" class="highlight">+254715647610</a></li>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatIcon = document.querySelector('.chat-icon');
+            const chatWindow = document.querySelector('.chat-window');
+            const closeChatButton = document.querySelector('.close-chat');
+
+            chatIcon.addEventListener('click', function() {
+                chatWindow.style.display = chatWindow.style.display === 'none' ? 'block' : 'none';
+            });
+
+            closeChatButton.addEventListener('click', function() {
+                chatWindow.style.display = 'none';
+            });
+        });
+
+        function loadMoreCards() {
+            // Logic to load more cards (3 additional cards)
+            const newCards = `
+                <div class="gallery-card">
+                    <img src="images/cakes/White Chocolate Blueberry Cheesecake.jpeg" alt="White Chocolate Blueberry Cheesecake">
+                    <h3>White Chocolate Blueberry Cheesecake</h3>
+                    <p>KShs 2,000</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/cakes/Simple Chocolate Fudge Cake.jpeg" alt="Simple Chocolate Fudge Cake">
+                    <h3>Simple Chocolate Fudge Cake</h3>
+                    <p>KShs 1,800</p>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/cakes/Chocolate Berry Cake.jpeg" alt="Chocolate Berry Cake">
+                    <h3>Chocolate Berry Cake</h3>
+                    <p>KShs 1,700</p>
+                </div>
+            `;
+            document.querySelector('.gallery-container').insertAdjacentHTML('beforeend', newCards);
+        }
+    </script>
+</body>
+</html>

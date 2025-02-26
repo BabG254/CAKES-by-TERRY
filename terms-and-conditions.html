@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - CAKES by TERRY</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 5px; /* Space between buttons */
+        }
+
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            margin-bottom: 10px; /* Space below content */
+        }
+
+        footer {
+            margin-top: 20px; /* Space above footer */
+            padding: 20px 0; /* Padding for footer */
+            background-color: #f1f1f1; /* Footer background */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="#"><img id="logo" src="./images/logo.jpeg" alt="CAKES by TERRY"></a>
+            <nav>
+                <ul>
+                    <li class="nav-links"><a class="links" href="#home">Home</a></li>
+                    <li class="nav-links"><a class="links" href="#Catalogue">Catalogue</a></li>
+                    <li class="nav-links"><a class="links" href="#home">About</a></li>
+                    <li class="nav-links"><a class="links" href="#contact-us">Contact Us</a></li>
+                    <li class="nav-links"><a class="links" href="#home">Gallery</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Terms and Conditions</h1>
+            <button class="collapsible">+ Introduction</button>
+            <div class="content">
+                <p>These terms and conditions outline the rules and regulations for the use of CAKES by TERRY's website.</p>
+            </div>
+            <button class="collapsible">+ Intellectual Property</button>
+            <div class="content">
+                <p>All content, trademarks, and other intellectual property on this website are owned by CAKES by TERRY.</p>
+            </div>
+            <button class="collapsible">+ Order Acceptance</button>
+            <div class="content">
+                <p>We reserve the right to refuse or cancel any order for reasons including but not limited to product availability, errors in the description or price, or fraud.</p>
+            </div>
+            <button class="collapsible">+ Limitation of Liability</button>
+            <div class="content">
+                <p>CAKES by TERRY shall not be liable for any indirect, incidental, or consequential damages arising from the use of our website.</p>
+            </div>
+            <button class="collapsible">+ Changes to These Terms</button>
+            <div class="content">
+                <p>We may update these terms and conditions from time to time. We will notify you of any changes by posting the new terms on this page.</p>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-div main-footer-div">
+                <img id="logo" src="./images/logo.jpeg" alt="CAKES by TERRY">
+                <h4>CAKES by TERRY</h4>
+                <div class="icon-collections">
+                    <div class="icon">
+                        <a target="_blank" href="https://www.tiktok.com/@cakesbyterry">
+                            <i class="fa-brands fa-tiktok brands"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="https://www.facebook.com/terriey.mike">
+                            <i class="fa-brands fa-facebook-f brands"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="https://www.instagram.com/cakesbyterry/p/DCmmBsPuMpA/">
+                            <i class="fa-brands fa-instagram brands"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="https://wa.me/254715647610">
+                            <i class="fa-brands fa-whatsapp brands"></i>
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="mailto:cakebyterry@gmail.com">
+                            <i class="fa-regular fa-envelope brands"></i>
+                        </a>
+                    </div>
+                </div>
+                <a id="contact-us" class="cart contact-us" href="#contact-us">Get in touch with us</a>
+            </div>
+            <div class="footer-div">
+                <li class=" main">Quick Links</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About Us</a></li>
+                <li><a href="/cakes.pdf" target="_blank">Catalogue</a></li> 
+            </div>
+            <div class="footer-div">
+                <li class=" main">For Customer</li>
+                <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html" target="_blank">Terms and Conditions</a></li>
+            </div>
+            <div class="footer-div">
+                <li class="main">Contact</li>
+                <li><i class="fa-solid fa-cake-candles cake-icon"></i> <span class="highlight">CAKES by TERRY</span></li>
+                <li><i class="fa-solid fa-location-dot location-icon"></i> Kamakis, Off Thika Road</li>
+                <li><i class="fa-solid fa-envelope email-icon"></i> Email us on: <a href="mailto: cakebyterry@gmail.com" class="highlight">cakebyterry@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone phone-icon"></i> <a href="tel:+254715647610" class="highlight">+254715647610</a></li>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
